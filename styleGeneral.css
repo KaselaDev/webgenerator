@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --color-black: #000000;
+    --color-black-blue: #14213d;
+    --color-yellow: #ffc15e;
+    --color-gray: #e5e5e5;
+    --color-white: #ffffff;
+    --bgColor: #f0ead2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    background-color: var(--bgColor);
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-black-blue);
+    color: var(--color-white);
+    position: relative;
+}
+header h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.25rem;
+}
+.container{
+    position: relative;
+}
+.login{
+    background-color: var(--color-yellow);
+    width: 75%;
+    max-width: 650px;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.login h2{
+    font-size: 2rem;
+}
+input[type="email"],input[type="password"]{
+    width: 90%;
+    height: 2rem;
+    border-radius: .65rem;
+    border: none;
+    font-size: 1rem;
+}
+.buttons{
+    display: flex;
+    padding-top: 20px;
+}
+.register{
+    background-color: #14213d;
+    color: var(--color-gray);
+    width: 40%;
+    height: 2.2rem;
+    font-size: 1.5rem;
+    position: relative;
+    margin: 2.5%;
+    border-radius: 1rem;
+}
+.register h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+}
+input[type="submit"]{
+    width: 40%;
+    height: 2.2rem;
+    margin: 2.5%;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: greenyellow;
+    border: none;
+}
+.logout{
+    position: relative;
+    height: 100%;
+}
+.logout i{
+    position: absolute;
+    width: 100px;
+    top: 35%;
+    transform: translateY(-35%);
+    left: 55px;
+    transform: scale(1.75);
+    color: red;
+}
+.titulo{
+    margin: 20px;
+    font-size: 2rem;
+}
+.generar{
+    background-color: var(--color-yellow);
+    padding: 15px;
+    margin: 30px;
+    border-radius: 1.5rem;
+    max-width: 600px;
+}
+.formWeb{
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.web{
+    margin-top: 30px;
+    height: 3rem;
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+}
+.crearWeb{
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.listaContainer{
+    background-color: var(--color-yellow);
+    margin: 30px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.headerTable{
+    display: grid;
+    grid-template-columns: 15% auto 10% 10%;
+    gap: 5px;
+    height: 40px;
+    font-size: 1.3rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5px;
+}
+.headerTable div{
+    border-radius: 10px;
+    border: #aaa solid 1px;
+    background-color: #222;
+    color: #aaa;
+}
+.headerTable p{
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.listTable i,
+.listTable p,
+.listTable a{
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.listTable{
+    display: grid;
+    grid-template-columns: 15% auto 10% 10%;
+    gap: 5px;
+    height: 40px;
+    font-size: 1.3rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5px;
+}
+.listTable a{
+    text-decoration: none;
+    color: #aaa;
+}
+.listTable div{
+    border-radius: 10px;
+    border: #aaa solid 1px;
+    background-color: #333;
+    color: #aaa;
+}
